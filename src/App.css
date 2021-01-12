@@ -1,0 +1,82 @@
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --border-radius: 4px;
+  --font-weight-500: 500;
+  --input-padding: 10px 16px;
+  --input-blue-color: #27a6e2;
+  --input-gray-color: #b9b9b9;
+  --input-transtion: all 0.2s ease-in-out;
+}
+
+fieldset {
+  border: 0;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: var(--font-weight-500);
+}
+
+input, label {
+  display: block;
+  font-size: 16px;
+  color: #333;
+}
+
+input:focus {
+  outline: 0;
+}
+
+input:not([type='submit']) {
+  width: 100%;
+  border: 1px solid var(--input-gray-color);
+  padding: var(--input-padding);
+  border-radius: var(--border-radius);
+  transition: var(--input-transtion);
+}
+
+input:not([type='submit']):focus {
+  border: 1px solid var(--input-blue-color);
+}
+
+input[type='submit'] {
+  border: 0;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: var(--font-weight-500);
+  padding: var(--input-padding);
+  border-radius: var(--border-radius);
+  background: var(--input-blue-color);
+  transition: var(--input-transtion);
+}
+
+input[type='submit']:hover {
+  background: #259dd6;
+}
+
+input[type='submit']:focus {
+  outline: 0;
+}
+
+input[type='submit']:disabled {
+  background: var(--input-gray-color);
+}
+
+.container {
+  width: 400px;
+  margin: 100px auto;
+  padding: 16px;
+  background: #eeeeee;
+  border-radius: var(--border-radius);
+}
+
+.mb-4 {
+  margin-bottom: 24px;
+}
